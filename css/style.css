@@ -979,12 +979,18 @@ img {
   background-color: var(--primary-bg-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+
+  cursor: pointer;
 }
 
 .close-icon {
   display: flex;
   width: 11px;
   height: 11px;
+}
+
+.modal-button:active .close-icon {
+  fill: var(--accent-color);
 }
 
 .modal-form {
@@ -1075,6 +1081,12 @@ img {
 
   border: 1px solid var(--modal-border-color);
   border-radius: 4px;
+
+  cursor: pointer;
+}
+
+.input-area:focus {
+  outline-color: var(--accent-color);
 }
 
 .textarea-field {
@@ -1087,6 +1099,13 @@ img {
 
   border: 1px solid var(--modal-border-color);
   border-radius: 4px;
+
+  cursor: pointer;
+}
+
+.textarea-field:focus {
+  outline: var(--accent-color);
+  border: 2px solid var(--accent-color);
 }
 
 .textarea-field::placeholder {
@@ -1100,11 +1119,14 @@ img {
 
 .confirm-label {
   position: absolute;
+
   right: 0;
+  bottom: 80px;
   width: 425px;
 
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 
   font-weight: 400;
   font-size: 14px;
@@ -1119,22 +1141,18 @@ img {
 
   width: 16px;
   height: 15px;
+
+  border: 2px solid #000000;
+  border-radius: 2px;
 }
 
-.checked-area {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  bottom: 50%;
-  transform: translateY(-50%);
-
-  width: 16px;
-  height: 15px;
-}
-
-.icon-check {
-  width: 16px;
-  height: 15px;
+.confirm-input:checked + .check-area {
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+  background-image: url(/images/check.svg);
+  background-size: contain;
+  background-position: 0 1px;
+  background-repeat: no-repeat;
 }
 
 .underline {
@@ -1144,17 +1162,10 @@ img {
 }
 
 .confirm-input {
-  width: 16px;
-  height: 15px;
-  margin-right: 7px;
-
   -webkit-appearance: none;
   -moz-appearence: none;
   appearance: none;
   position: absolute;
-}
-
-.confirm-input:active {
 }
 
 .contract-conditions {
@@ -1186,4 +1197,6 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-color: transparent;
   border-radius: 4px;
+
+  cursor: pointer;
 }
