@@ -36,7 +36,7 @@
                     <li class="item">
                         <a href="tel:+380961111111" class="mail-phone">
                             <svg class="phone-icon">
-                                <use href="./images/sprite.svg#icon-phone"></use>
+                                <use href="./images/sprite.svg#icon-smartphone"></use>
                             </svg>
                             +38 096 111 11 11
                         </a>
@@ -425,6 +425,76 @@
                         <use href="./images/sprite.svg#icon-close"></use>
                     </svg>
                 </button>
+
+                <form action="" method="POST" class="modal-form"> 
+                    <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+
+                    <ul class="modal-list">
+                        <li class="modal-item">
+                            <label class="label-name">
+                                Имя
+                                <input type="text" class="input-area name" >
+                            </label>
+                            <span class="modal-icon person-icon">
+                                <svg class="icon-input">
+                                    <use href="./images/sprite.svg#icon-person"></use>
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="modal-item">
+                            <label class="label-name">
+                                Телефон
+                                <input type="tel" class="input-area">
+                            </label>
+                            <span class="modal-icon phone-icon">
+                                <svg class="icon-input">
+                                    <use href="./images/sprite.svg#icon-phone"></use>
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="modal-item">
+                            <label class="label-name">
+                                Почта
+                                <input type="email" class="input-area">
+                            </label>
+                            <span class="modal-icon email-icon">
+                                <svg class="icon-input">
+                                    <use href="./images/sprite.svg#icon-email"></use>
+                                </svg>
+                            </span>
+                        </li>
+                        <li class="modal-item">
+                            <label class="label-name">
+                                Комментар
+                                <textarea class="textarea-field" 
+                                 name="comment" rows="5" 
+                                 cols="45" 
+                                 placeholder="Введите текст">
+                                </textarea>
+                            </label>
+                        </li>
+                    </ul>
+
+                    <label class="confirm-label">
+                        <span class="check-area">
+                            <svg class="icon-check check">
+                                <use href="./images/sprite.svg#icon-checkbox"></use>
+                            </svg>
+                        </span>
+                        <span class="checked-area">
+                            <svg class="icon-check checked">
+                                <use href="./images/sprite.svg#icon-check"></use>
+                            </svg>
+                        </span>
+                        
+                        <input class="confirm-input" type="checkbox">
+                        Соглашаюсь с рассылкой и принимаю 
+                        <a class="contract-conditions" href="#"><span class="underline">Условия договора</span></a>
+                    </label>
+
+                    <button type="submit" class="submit-button">Отправить</button>
+                </form>
+
             </div>
         </div>
 
