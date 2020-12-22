@@ -414,6 +414,15 @@
                         </li>
                     </ul>
                 </div>
+                <div class="form-container">
+                    <form action="#" method="POST" class="footer-form">
+                        <div>
+                            <b class="subscribe-title">Подпишитесь на рассылку</b>
+                            <input type="email" name="email" class="footer-input" placeholder="Е-mail">
+                        </div>
+                        <button type="submit" class="subscribe-button">Подписаться</button>
+                    </form>
+                </div>
             </div>
         </footer>
 
@@ -426,39 +435,33 @@
                     </svg>
                 </button>
 
-                <form action="" method="POST" class="modal-form"> 
+                <form action="#" method="POST" class="modal-form"> 
                     <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
 
                     <ul class="modal-list">
                         <li class="modal-item">
-                            <label class="label-name">
-                                Имя
-                                <input type="text" name="name" class="input-area name" >
-                            </label>
+                            <label class="label-name" for="name">Имя</label>
+                            <input type="text" name="name" id="name" class="input-area name" >
                             <span class="modal-icon person-icon">
-                                <svg class="icon-input">
+                                <svg class="icon-input person">
                                     <use href="./images/sprite.svg#icon-person"></use>
                                 </svg>
                             </span>
                         </li>
                         <li class="modal-item">
-                            <label class="label-name">
-                                Телефон
-                                <input type="tel" name="phone" class="input-area">
-                            </label>
+                            <label class="label-name" for="phone">Телефон</label>
+                            <input type="tel" name="phone" id="phone" class="input-area phone-input">
                             <span class="modal-icon phone-icon">
-                                <svg class="icon-input">
+                                <svg class="icon-input phone">
                                     <use href="./images/sprite.svg#icon-phone"></use>
                                 </svg>
                             </span>
                         </li>
                         <li class="modal-item">
-                            <label class="label-name">
-                                Почта
-                                <input type="email" name="email" class="input-area">
-                            </label>
+                            <label class="label-name" for="email">Почта</label>
+                            <input type="email" name="email" id="email" class="input-area email-input">
                             <span class="modal-icon email-icon">
-                                <svg class="icon-input">
+                                <svg class="icon-input email">
                                     <use href="./images/sprite.svg#icon-email"></use>
                                 </svg>
                             </span>
