@@ -1002,7 +1002,7 @@ img {
   margin-left: 10px;
 
   background-color: var(--accent-color);
-  background-image: url(/images/icon-send.svg);
+  background-image: url(../images/icon-send.svg);
   background-size: 24px 24px;
 }
 
@@ -1301,7 +1301,7 @@ img {
 .confirm-input:checked + .check-area::before {
   border-color: var(--accent-color);
   background-color: var(--accent-color);
-  background-image: url(/images/check.svg);
+  background-image: url(../images/check.svg);
   background-size: contain;
   background-position: 0 1px;
   background-repeat: no-repeat;
