@@ -1,0 +1,88 @@
+.clients {
+  background-color: $primary-bg-color;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-container {
+  @extend %container;
+
+  text-align: center;
+}
+
+.clients-title {
+  @extend %title;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  margin-top: 50px;
+  padding: 0;
+}
+
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include transition(color);
+
+  width: 170px;
+  height: 90px;
+
+  border: 1px solid $border-clients-color;
+  border-radius: 4px;
+
+  color: $logo-color;
+  background-color: $primary-bg-color;
+}
+
+.clients-link:focus,
+.clients-link:hover {
+  color: $accent-color;
+  border-color: $accent-color;
+}
+
+.clients-icon {
+  fill: currentColor;
+}
+
+.first {
+  width: 44.27px;
+  height: 49.23px;
+}
+
+.second {
+  width: 40px;
+  height: 52px;
+}
+
+.third {
+  width: 41px;
+  height: 42.6px;
+}
+
+.fourth {
+  width: 79.66px;
+  height: 42.02px;
+}
+
+.fifth {
+  width: 59px;
+  height: 47px;
+}
+
+.sixth {
+  width: 88.48px;
+  height: 45.44px;
+}
+
+.clients-list .item + .item {
+  margin-left: 30px;
+}
+
+.clients-list .item {
+  width: 170px;
+}

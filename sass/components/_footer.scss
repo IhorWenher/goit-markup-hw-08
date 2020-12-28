@@ -1,0 +1,177 @@
+.page-footer {
+  background-color: $alternative-bg-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+
+  @extend %container;
+}
+
+.footer-logo {
+  font-family: Raleway, sans-serif;
+  color: $primary-bg-color;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+.contact {
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+
+  color: $primary-bg-color;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.contacts-list {
+  margin: 0;
+  padding: 0;
+}
+
+.contacts-list .item {
+  margin-top: 9px;
+}
+
+.contact .mail-phone {
+  margin: 0;
+  padding: 0;
+
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.link-container {
+  margin-left: 70px;
+}
+
+.invite {
+  text-transform: uppercase;
+
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: $primary-bg-color;
+}
+
+.border-links {
+  display: flex;
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.border-links .link-item + .link-item {
+  margin-left: 10px;
+}
+
+.footer .social-link {
+  @include transition(background-color);
+
+  background-color: rgba(255, 255, 255, 0.1);
+  color: $primary-bg-color;
+}
+
+.footer .social-link:focus,
+.footer .social-link:hover {
+  background-color: $accent-color;
+}
+
+.form-container {
+  margin-left: auto;
+}
+
+.footer-form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.subscribe-title {
+  display: block;
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $primary-white-text-color;
+
+  text-transform: uppercase;
+}
+
+.footer-input {
+  width: 358px;
+  height: 50px;
+
+  padding: 15px 16px;
+  margin-right: 12px;
+
+  color: $primary-bg-color;
+
+  background-color: transparent;
+  border: 1px solid $input-footer-border-color;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px $input-footer-filter-color);
+  border-radius: 4px;
+}
+
+.footer-input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  color: $input-footer-placeholder-color;
+}
+
+.subscribe-button {
+  display: flex;
+  align-items: center;
+
+  min-width: 200px;
+  height: 50px;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  padding-right: 8px;
+
+  background: $accent-color;
+  box-shadow: 0px 4px 4px $button-footer-border-color;
+  border-radius: 4px;
+  border-color: transparent;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+
+  color: $primary-white-text-color;
+}
+
+.subscribe-button::after {
+  content: "";
+  display: inline-block;
+
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+
+  background-color: $accent-color;
+  background-image: url(../images/icon-send.svg);
+  background-size: 24px 24px;
+}

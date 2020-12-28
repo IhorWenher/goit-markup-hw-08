@@ -1,0 +1,66 @@
+.features {
+  background-color: $primary-bg-color;
+  padding-top: 94px;
+}
+
+.features-container {
+  @extend %container;
+}
+
+.features-container .title {
+  position: absolute;
+  visibility: hidden;
+}
+
+.features-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.icon-area {
+  text-align: center;
+  padding: 25px 100px;
+  background-color: $icon-area-bg-color;
+  border-radius: 4px;
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
+}
+
+.features-title {
+  display: block;
+  margin: 0;
+  margin-top: 30px;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 1.1;
+  color: $primary-title-color;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.feature-description {
+  margin: 0;
+  margin-top: 10px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+
+.features-list .item {
+  width: 370px;
+  margin-left: 30px;
+}
+
+.features-list .item:first-child {
+  margin-left: 0;
+}

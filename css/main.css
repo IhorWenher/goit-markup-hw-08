@@ -1,30 +1,294 @@
+/*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+/*
+Document
+========
+*/
+/**
+Use a better box model (opinionated).
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/**
+Use a more readable tab size (opinionated).
+*/
 :root {
-  --primary-text-color: #757575;
-  --primary-title-color: #212121;
-  --accent-color: #2196f3;
-  --primary-bg-color: #ffffff;
-  --primary-hover-color: ;
-  --alternative-bg-color: #2f303a;
-  --section-bg-color: #f5f4fa;
-  --icon-area-bg-color: #f5f4fa;
-  --border-clients-color: #afb1b8;
-  --logo-color: #afb1b8;
-  --hero-bg-color: #c4c4c4;
-  --activity-bg-overlya: rgba(47, 48, 58, 0.8);
-  --project-overlya-bg-color: rgba(33, 150, 243, 0.9);
-  --modal-bg-backdrop: rgba(0, 0, 0, 0.2);
-  --modal-border-color: rgba(33, 33, 33, 0.2);
-  --modal-bg-button-color: #188ce8;
-  --input-footer-placeholder-color: rgba(255, 255, 255, 0.6);
-  --input-footer-border-color: rgba(255, 255, 255, 0.3);
-  --input-footer-filter-color: rgba(0, 0, 0, 0.15);
-  --button-footer-border-color: rgba(0, 0, 0, 0.15);
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+/**
+1. Correct the line height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+*/
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/*
+Sections
+========
+*/
+/**
+Remove the margin in all browsers.
+*/
+body {
+  margin: 0;
+}
+
+/**
+Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+*/
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+/*
+Grouping content
+================
+*/
+/**
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+*/
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+}
+
+/*
+Text-level semantics
+====================
+*/
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+abbr[title] {
+  text-decoration: underline dotted;
+}
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+/**
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+}
+
+/*
+Forms
+=====
+*/
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+1. Remove the inheritance of text transform in Firefox.
+*/
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+Remove the additional ':invalid' styles in Firefox.
+See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+legend {
+  padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+progress {
+  vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+/*
+Add the correct display in Chrome and Safari.
+*/
+summary {
+  display: list-item;
+}
+
+.footer-container, .clients-container, .team-container, .activitys-container, .features-container, .container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.clients-title, .team-title, .activitys-title {
+  display: block;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.2;
+  color: #212121;
+  font-weight: 700;
+  letter-spacing: 0.03em;
 }
 
 body {
-  background-color: var(--primary-bg-color);
-  color: var(--primary-text-color);
-
+  background-color: #ffffff;
+  color: #757575;
   font-family: Roboto, sans-serif;
   font-style: normal;
 }
@@ -49,23 +313,15 @@ img {
   height: auto;
 }
 
-/*Хедер*/
-
 .page-header {
   display: flex;
-  background-color: var(--primary-bg-color);
+  background-color: #ffffff;
 }
 
 .container {
   display: flex;
   align-items: center;
-  width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-
-  background-color: var(--primary-bg-color);
+  background-color: #ffffff;
 }
 
 .navigation {
@@ -75,8 +331,7 @@ img {
 
 .logo {
   display: flex;
-
-  color: var(--primary-title-color);
+  color: #212121;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   line-height: 1.2;
@@ -85,7 +340,7 @@ img {
 }
 
 .logo-beginning {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .site-nav {
@@ -106,46 +361,53 @@ img {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
   font-weight: 500;
   padding-top: 32px;
   padding-bottom: 32px;
-
-  color: var(--primary-title-color);
+  color: #212121;
 }
 
 .list-item:hover,
 .list-item:focus {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .list-item:active {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .item .active {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .active::after {
   content: "";
-
   position: absolute;
   bottom: 0;
   display: block;
   width: 100%;
   height: 4px;
-
-  background-color: var(--accent-color);
+  background-color: #2196f3;
   border-radius: 2px;
 }
 
-/*Контакты хедера*/
+.logo {
+  display: flex;
+  color: #212121;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+}
+
+.logo-beginning {
+  color: #2196f3;
+}
 
 .communication {
   display: flex;
   align-items: center;
-
   margin: 0;
   margin-left: auto;
 }
@@ -157,30 +419,24 @@ img {
 .mail-phone {
   display: flex;
   align-items: center;
-
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
   padding-top: 32px;
   padding-bottom: 32px;
   margin-left: 10px;
-
-  color: var(--primary-text-color);
+  color: #757575;
   line-height: 1.4;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 2%;
 }
-
-.mail-phone:hover,
-.mail-phone:focus {
-  color: var(--accent-color);
+.mail-phone.mail-phone:hover, .mail-phone.mail-phone:focus {
+  color: #2196f3;
 }
 
 .envelope-icon {
   margin-right: 10px;
-
   fill: currentColor;
   width: 16px;
   height: 12px;
@@ -188,16 +444,13 @@ img {
 
 .phone-icon {
   margin-right: 10px;
-
   fill: currentColor;
   width: 10px;
   height: 16px;
 }
 
-/*Герой*/
-
 .hero {
-  background-color: var(--primary-bg-color);
+  background-color: #ffffff;
   text-align: center;
 }
 
@@ -207,13 +460,8 @@ img {
   margin-left: auto;
   margin-right: auto;
   padding-top: 200px;
-  background-color: var(--hero-bg-color);
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/hero.jpg);
+  background-color: #c4c4c4;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-size: auto auto;
   background-position: center center;
@@ -223,8 +471,7 @@ img {
   padding: 0;
   margin: 0;
   margin-bottom: 30px;
-
-  color: var(--primary-bg-color);
+  color: #ffffff;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
@@ -234,15 +481,11 @@ img {
 
 .hero .button {
   display: inline-block;
-
   padding: 10px 32px;
   border-radius: 4px;
-
   min-width: 200px;
-
-  color: var(--primary-bg-color);
-  background-color: var(--accent-color);
-
+  color: #ffffff;
+  background-color: #2196f3;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.9;
@@ -253,27 +496,15 @@ img {
 
 .button:focus,
 .button:hover {
-  color: var(--primary-bg-color);
-  background-color: var(--accent-color);
-
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  color: #ffffff;
+  background-color: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
 
-/* Преимущества*/
-
 .features {
-  background-color: var(--primary-bg-color);
+  background-color: #ffffff;
   padding-top: 94px;
-}
-
-.features-container {
-  width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .features-container .title {
@@ -290,7 +521,7 @@ img {
 .icon-area {
   text-align: center;
   padding: 25px 100px;
-  background-color: var(--icon-area-bg-color);
+  background-color: #f5f4fa;
   border-radius: 4px;
 }
 
@@ -304,10 +535,9 @@ img {
   margin: 0;
   margin-top: 30px;
   padding: 0;
-
   font-size: 14px;
   line-height: 1.1;
-  color: var(--primary-title-color);
+  color: #212121;
   font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -317,7 +547,6 @@ img {
 .feature-description {
   margin: 0;
   margin-top: 10px;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -334,35 +563,10 @@ img {
   margin-left: 0;
 }
 
-/*Чем занимаемся*/
-
 .activitys {
-  background-color: var(--primary-bg-color);
+  background-color: #ffffff;
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-.activitys-container {
-  width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.activitys-title,
-.team-title,
-.clients-title {
-  display: block;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-
-  font-size: 36px;
-  line-height: 1.2;
-  color: var(--primary-title-color);
-  font-weight: 700;
-  letter-spacing: 0.03em;
 }
 
 .activity-list {
@@ -385,42 +589,29 @@ img {
   display: inline-block;
   bottom: 0;
   left: 0;
-
   width: 100%;
   height: 70px;
   margin: 0;
   padding-top: 27px;
   padding-bottom: 27px;
-
   text-align: center;
-  background-color: var(--activity-bg-overlya);
+  background-color: rgba(47, 48, 58, 0.8);
 }
 
 .activity-overlya h3 {
   margin: 0;
   padding: 0;
-
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--primary-bg-color);
+  color: #ffffff;
 }
-
-/*Команда*/
 
 .page-team {
-  background-color: var(--section-bg-color);
+  background-color: #f5f4fa;
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-.team-container {
-  width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .emloyees-list {
@@ -436,23 +627,19 @@ img {
 
 .employee-item {
   display: block;
-  background-color: var(--primary-bg-color);
+  background-color: #ffffff;
   text-align: center;
-
   padding-bottom: 30px;
-
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
-  box-shadow: 0px 1px 3px rgba(153, 70, 70, 0.12),
-    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(153, 70, 70, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .employee {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  color: var(--primary-title-color);
+  color: #212121;
   font-weight: 500;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -466,13 +653,10 @@ img {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
   padding: 0;
   margin: 0;
-
   font-weight: 500;
   font-size: 16px;
-
   color: #212121;
 }
 
@@ -485,15 +669,14 @@ img {
 }
 
 .employee:hover {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .employee-position {
   margin: 0;
   margin-top: 10px;
   padding: 0;
-
-  color: var(--primary-text-color);
+  color: #757575;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.2;
@@ -515,22 +698,20 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: var(--primary-bg-color);
-  color: var(--logo-color);
+  background-color: #ffffff;
+  color: #afb1b8;
 }
 
 .social-link:focus,
 .social-link:hover {
-  background-color: var(--accent-color);
-  color: var(--primary-bg-color);
+  background-color: #2196f3;
+  color: #ffffff;
 }
 
 .pin {
@@ -539,21 +720,13 @@ img {
   fill: currentColor;
 }
 
-/*Постоянные клиенты*/
-
 .clients {
-  background-color: var(--primary-bg-color);
+  background-color: #ffffff;
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 .clients-container {
-  width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-
   text-align: center;
 }
 
@@ -569,25 +742,21 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
   width: 170px;
   height: 90px;
-
-  border: 1px solid var(--border-clients-color);
+  border: 1px solid #afb1b8;
   border-radius: 4px;
-
-  color: var(--logo-color);
-  background-color: var(--primary-bg-color);
+  color: #afb1b8;
+  background-color: #ffffff;
 }
 
 .clients-link:focus,
 .clients-link:hover {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
+  color: #2196f3;
+  border-color: #2196f3;
 }
 
 .clients-icon {
@@ -632,199 +801,8 @@ img {
   width: 170px;
 }
 
-/*Портфолио*/
-
-.page-header.portfolio {
-  border-bottom: 1px solid #ececec;
-}
-
-.portfolio-section {
-  padding-top: 94px;
-  padding-bottom: 109px;
-}
-
-.portfolio-container {
-  width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.examples-container {
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 65px;
-}
-
-.examples-title {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  display: none;
-}
-
-.examples-list {
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-}
-
-.examples-list .item {
-  margin-left: 8px;
-}
-
-.examples-list .item:first-child {
-  margin: 0;
-}
-
-.examples-list .button {
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  padding: 6px 22px;
-
-  font-family: Roboto;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
-  color: #212121;
-  background-color: var(--section-bg-color);
-
-  border-radius: 4px;
-  border: none;
-
-  cursor: pointer;
-}
-
-.examples-list .button:hover,
-.examples-list .button:focus {
-  padding: 6px 22px;
-
-  color: var(--primary-bg-color);
-  background-color: var(--accent-color);
-
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-}
-
-.projects-container {
-  display: flex;
-  flex-wrap: wrap;
-
-  margin: -15px;
-  padding: 0;
-}
-
-.project-item {
-  display: flex;
-  width: 370px;
-
-  margin: 15px;
-}
-
-.overlya-container {
-  display: block;
-
-  position: relative;
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-}
-
-.project-overlya {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  transition-property: transform, opacity;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 63px 24px;
-
-  background-color: var(--project-overlya-bg-color);
-}
-
-.base-overlya {
-  transform: translateY(100%);
-  opacity: 0;
-}
-
-.project:focus .base-overlya,
-.project:hover .base-overlya {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-.project-overlya p {
-  display: block;
-  padding: 0;
-  margin: 0;
-
-  text-align: left;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
-  color: var(--primary-bg-color);
-}
-
-.content {
-  padding: 20px 24px;
-
-  background: var(--primary-bg-color);
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-}
-
-.project {
-  transition-property: opacity;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.project:focus,
-.project:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.project-title {
-  margin: 0;
-  padding: 0;
-
-  color: var(--primary-title-color);
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  text-align: left;
-}
-
-.project-description {
-  margin: 0;
-  margin-top: 4px;
-
-  color: var(--primary-text-color);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.9;
-  letter-spacing: 0.03em;
-}
-
-/*Футер*/
-
 .page-footer {
-  background-color: var(--alternative-bg-color);
+  background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -832,17 +810,11 @@ img {
 .footer-container {
   display: flex;
   align-items: baseline;
-
-  width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .footer-logo {
   font-family: Raleway, sans-serif;
-  color: var(--primary-bg-color);
+  color: #ffffff;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
@@ -853,8 +825,7 @@ img {
   margin: 0;
   margin-top: 20px;
   padding: 0;
-
-  color: var(--primary-bg-color);
+  color: #ffffff;
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
@@ -874,7 +845,6 @@ img {
 .contact .mail-phone {
   margin: 0;
   padding: 0;
-
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   line-height: 1.7;
@@ -887,12 +857,11 @@ img {
 
 .invite {
   text-transform: uppercase;
-
   font-size: 14px;
   line-height: 1.2;
   font-weight: 700;
   letter-spacing: 0.03em;
-  color: var(--primary-bg-color);
+  color: #ffffff;
 }
 
 .border-links {
@@ -910,14 +879,13 @@ img {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
   background-color: rgba(255, 255, 255, 0.1);
-  color: var(--primary-bg-color);
+  color: #ffffff;
 }
 
 .footer .social-link:focus,
 .footer .social-link:hover {
-  background-color: var(--accent-color);
+  background-color: #2196f3;
 }
 
 .form-container {
@@ -933,30 +901,24 @@ img {
 .subscribe-title {
   display: block;
   margin-bottom: 20px;
-
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
-  color: var(--primary-bg-color);
-
+  color: #ffffff;
   text-transform: uppercase;
 }
 
 .footer-input {
   width: 358px;
   height: 50px;
-
   padding: 15px 16px;
   margin-right: 12px;
-
-  color: var(--primary-bg-color);
-
+  color: #ffffff;
   background-color: transparent;
-  border: 1px solid var(--input-footer-border-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
-  filter: drop-shadow(0px 4px 4px var(--input-footer-filter-color));
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 }
 
@@ -965,64 +927,50 @@ img {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-
-  color: var(--input-footer-placeholder-color);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .subscribe-button {
   display: flex;
   align-items: center;
-
   min-width: 200px;
   height: 50px;
-
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 29px;
   padding-right: 8px;
-
-  background: var(--accent-color);
-  box-shadow: 0px 4px 4px var(--button-footer-border-color);
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-color: transparent;
-
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.06em;
-
-  color: var(--primary-bg-color);
+  color: #ffffff;
 }
 
 .subscribe-button::after {
   content: "";
   display: inline-block;
-
   width: 24px;
   height: 24px;
   margin-left: 10px;
-
-  background-color: var(--accent-color);
+  background-color: #2196f3;
   background-image: url(../images/icon-send.svg);
   background-size: 24px 24px;
 }
-
-/*Модальное окно*/
 
 .backdrop {
   position: fixed;
   top: 0;
   left: 0;
-
   transition-property: opacity;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
   width: 100%;
   height: 100%;
-
-  background-color: var(--modal-bg-backdrop);
-
+  background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
 }
 
@@ -1039,18 +987,17 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-
   transform: translate(-50%, -50%) scale(1);
-  transition-property: translate, scale;
+  transition-property: translate;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+  transition-property: scale;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   min-height: 581px;
   min-width: 528px;
-
-  background-color: var(--primary-bg-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
 
@@ -1058,20 +1005,16 @@ img {
   position: absolute;
   top: 8px;
   right: 8px;
-
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0;
   margin: 0;
-
   width: 30px;
   height: 30px;
-
-  background-color: var(--primary-bg-color);
+  background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-
   cursor: pointer;
 }
 
@@ -1079,14 +1022,13 @@ img {
   display: flex;
   width: 11px;
   height: 11px;
-
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-button:active .close-icon {
-  fill: var(--accent-color);
+  fill: #2196f3;
 }
 
 .modal-form {
@@ -1101,8 +1043,7 @@ img {
 .modal-title {
   padding: 0;
   margin: 0;
-
-  color: var(--primary-title-color);
+  color: #212121;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
@@ -1126,18 +1067,17 @@ img {
 
 .label-name {
   position: relative;
-
   font-weight: 400;
   font-size: 12px;
   line-height: 1.2;
   letter-spacing: 0.01em;
-  color: var(--primary-text-color);
+  color: #757575;
 }
 
 .modal-icon {
   position: absolute;
   display: block;
-  color: var(--primary-title-color);
+  color: #212121;
 }
 
 .name:focus + .person-icon {
@@ -1145,11 +1085,11 @@ img {
 }
 
 .phone-input:focus + .phone-icon {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .email-input:focus + .email-icon {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .person,
@@ -1163,7 +1103,6 @@ img {
   top: 36px;
   width: 12px;
   height: 12px;
-
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1174,7 +1113,6 @@ img {
   bottom: 13.74px;
   width: 13px;
   height: 13px;
-
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1185,7 +1123,6 @@ img {
   bottom: 14px;
   width: 15px;
   height: 12px;
-
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1201,18 +1138,14 @@ img {
   display: block;
   width: 100%;
   height: 40px;
-
   margin-top: 4px;
   padding: 12px 42px;
-
   font-size: 16px;
   font-weight: 400;
   line-height: 1.2;
   letter-spacing: 0.01em;
-
-  border: 1px solid var(--modal-border-color);
+  border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-
   cursor: pointer;
 }
 
@@ -1227,29 +1160,26 @@ img {
 .name:focus,
 .phone-input:focus,
 .email-input:focus {
-  outline-color: var(--accent-color);
+  outline-color: #2196f3;
 }
 
 .textarea-field {
   display: block;
   width: 100%;
   height: 120px;
-
   margin-top: 4px;
   padding: 12px 16px;
-
-  border: 1px solid var(--modal-border-color);
+  border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-
   cursor: pointer;
-  transition-property: outline, border;
+  transition-property: outline;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .textarea-field:focus {
-  outline: var(--accent-color);
-  border: 2px solid var(--accent-color);
+  outline: #2196f3;
+  border: 2px solid #2196f3;
 }
 
 .textarea-field::placeholder {
@@ -1257,32 +1187,27 @@ img {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.01em;
-
   color: rgba(117, 117, 117, 0.5);
 }
 
 .confirm-label {
   position: absolute;
-
   right: 0;
   bottom: 80px;
   width: 425px;
-
   display: flex;
   justify-content: flex-end;
   align-items: center;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
+  color: #757575;
 }
 
 .check-area {
   position: absolute;
   left: 0;
-
   width: 16px;
   height: 15px;
 }
@@ -1291,23 +1216,23 @@ img {
   content: "";
   position: absolute;
   left: 0;
-
   width: 16px;
   height: 15px;
-
   border: 2px solid #000000;
   border-radius: 2px;
 }
 
 .confirm-input:checked + .check-area::before {
-  border-color: var(--accent-color);
-  background-color: var(--accent-color);
+  border-color: #2196f3;
+  background-color: #2196f3;
   background-image: url(../images/check.svg);
   background-size: contain;
   background-position: 0 1px;
   background-repeat: no-repeat;
-
-  transition-property: background-color, background-image;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background-image;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1326,7 +1251,7 @@ img {
 }
 
 .contract-conditions {
-  color: var(--accent-color);
+  color: #2196f3;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -1339,21 +1264,18 @@ img {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-
   width: 200px;
   height: 50px;
-
   padding: 10px 55px;
-
-  color: var(--primary-bg-color);
+  color: #ffffff;
   font-weight: 700;
   line-height: 1.9;
   letter-spacing: 0.06em;
-
-  background: var(--modal-bg-button-color);
+  background: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-color: transparent;
   border-radius: 4px;
-
   cursor: pointer;
 }
+
+/*# sourceMappingURL=file:///d:/%D0%9A%D1%83%D1%80%D1%81%D0%B8%20%D0%94%D0%97%20GIThub/goit-markup-hw-07/css/main.css.map *//*# sourceMappingURL=main.css.map */
