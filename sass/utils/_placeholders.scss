@@ -18,3 +18,12 @@
   font-weight: 700;
   letter-spacing: 0.03em;
 }
+
+%modal-icon {
+  left: 12px;
+  top: 33px;
+  width: 18px;
+  height: 18px;
+
+  @include transition(color);
+}

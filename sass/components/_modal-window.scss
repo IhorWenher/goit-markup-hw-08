@@ -66,6 +66,7 @@
   display: flex;
   width: 11px;
   height: 11px;
+  fill: #000000;
 
   @include transition(fill);
 }
@@ -125,14 +126,8 @@
   color: $primary-title-color;
 }
 
-.name:focus + .person-icon {
-  color: var(--accent-color);
-}
-
-.phone-input:focus + .phone-icon {
-  color: $accent-color;
-}
-
+.name:focus + .person-icon,
+.phone-input:focus + .modalphone-icon,
 .email-input:focus + .email-icon {
   color: $accent-color;
 }
@@ -143,31 +138,10 @@
   fill: currentColor;
 }
 
-.person-icon {
-  left: 15px;
-  top: 36px;
-  width: 12px;
-  height: 12px;
-
-  @include transition(color);
-}
-
-.phone-icon {
-  left: 14.27px;
-  bottom: 13.74px;
-  width: 13px;
-  height: 13px;
-
-  @include transition(color);
-}
-
+.person-icon,
+.modalphone-icon,
 .email-icon {
-  left: 13.5px;
-  bottom: 14px;
-  width: 15px;
-  height: 12px;
-
-  @include transition(color);
+  @extend %modal-icon;
 }
 
 .icon-input {

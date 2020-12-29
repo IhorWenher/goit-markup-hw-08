@@ -286,6 +286,18 @@ summary {
   letter-spacing: 0.03em;
 }
 
+.person-icon,
+.modalphone-icon,
+.email-icon {
+  left: 12px;
+  top: 33px;
+  width: 18px;
+  height: 18px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 body {
   background-color: #ffffff;
   color: #757575;
@@ -1021,6 +1033,7 @@ img {
   display: flex;
   width: 11px;
   height: 11px;
+  fill: #000000;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1079,14 +1092,8 @@ img {
   color: #212121;
 }
 
-.name:focus + .person-icon {
-  color: var(--accent-color);
-}
-
-.phone-input:focus + .phone-icon {
-  color: #2196f3;
-}
-
+.name:focus + .person-icon,
+.phone-input:focus + .modalphone-icon,
 .email-input:focus + .email-icon {
   color: #2196f3;
 }
@@ -1095,36 +1102,6 @@ img {
 .phone,
 .email {
   fill: currentColor;
-}
-
-.person-icon {
-  left: 15px;
-  top: 36px;
-  width: 12px;
-  height: 12px;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.phone-icon {
-  left: 14.27px;
-  bottom: 13.74px;
-  width: 13px;
-  height: 13px;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.email-icon {
-  left: 13.5px;
-  bottom: 14px;
-  width: 15px;
-  height: 12px;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-input {
