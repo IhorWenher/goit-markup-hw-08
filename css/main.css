@@ -973,7 +973,6 @@ img {
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
 }
-
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -1176,12 +1175,10 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .textarea-field:focus {
   outline: #2196f3;
   border: 2px solid #2196f3;
 }
-
 .textarea-field::placeholder {
   font-weight: 400;
   font-size: 14px;
@@ -1211,7 +1208,6 @@ img {
   width: 16px;
   height: 15px;
 }
-
 .check-area::before {
   content: "";
   position: absolute;
