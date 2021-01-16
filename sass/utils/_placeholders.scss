@@ -27,3 +27,23 @@
 
   @include transition(color);
 }
+
+%social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include transition(color);
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: $primary-bg-color;
+  color: $logo-color;
+}
+
+%pin {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
