@@ -1,60 +1,85 @@
 .page-header {
-  display: flex;
   background-color: $primary-bg-color;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
 }
 
 .container {
   display: flex;
-  align-items: center;
-
+  justify-content: space-between;
   @extend %container;
-
   background-color: $primary-bg-color;
+
+  @media screen and (max-width: 767px) {
+    position: relative;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+  }
 }
 
-.navigation {
-  display: flex;
-  align-items: center;
-}
+.header-overlya {
+  display: none;
 
-.logo {
-  display: flex;
+  @media screen and (max-width: 767px) {
+    position: absolute;
 
-  color: $primary-title-color;
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  line-height: 1.2;
-  font-size: 26px;
-  letter-spacing: 0.03em;
-}
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 453px;
+    background-color: $primary-bg-color;
+  }
 
-.logo-beginning {
-  color: $accent-color;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    margin-left: 88px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-left: 93px;
+  }
 }
 
 .site-nav {
-  display: flex;
-  align-items: center;
-  padding: 0px;
-  margin: 0px;
-  margin-left: 93px;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+  }
 }
 
 .site-nav .item + .item {
-  margin-left: 50px;
+  @media screen and (min-width: $tablet) {
+    margin-left: 50px;
+  }
 }
 
 .site-nav .list-item {
   display: block;
   position: relative;
+  text-align: center;
 
   @include transition(color);
 
   font-weight: 500;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
 
   color: $primary-title-color;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 1.14;
+    padding-top: 31px;
+    padding-bottom: 31px;
+  }
 }
 
 .list-item:hover,
@@ -81,4 +106,28 @@
 
   background-color: $accent-color;
   border-radius: 2px;
+}
+
+.mobile-button {
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.mobile-button .icon-cross {
+  display: none;
+}
+
+.mobile-button.is-open .icon-cross {
+  display: block;
+}
+
+.mobile-button.is-open .icon-menu {
+  display: none;
 }

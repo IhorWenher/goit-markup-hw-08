@@ -1,9 +1,21 @@
 %container {
-  width: 1200px;
+  width: 100%;
   padding-right: 15px;
   padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+
+  @media screen and (min-width: $mobile) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 %title {
@@ -46,4 +58,13 @@
   width: 20px;
   height: 20px;
   fill: currentColor;
+}
+
+%communication-icon {
+  margin-right: 10px;
+  fill: currentColor;
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    margin-right: 8px;
+  }
 }

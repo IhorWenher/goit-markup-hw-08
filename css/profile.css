@@ -338,20 +338,6 @@ img {
   align-items: center;
 }
 
-.logo {
-  display: flex;
-  color: #212121;
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  line-height: 1.2;
-  font-size: 26px;
-  letter-spacing: 0.03em;
-}
-
-.logo-beginning {
-  color: #2196f3;
-}
-
 .site-nav {
   display: flex;
   align-items: center;
@@ -405,11 +391,17 @@ img {
   color: #212121;
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  line-height: 1.2;
-  font-size: 26px;
+  line-height: 1.16;
+  font-size: 24px;
   letter-spacing: 0.03em;
 }
 
+@media screen and (min-width: 768px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
 .logo-beginning {
   color: #2196f3;
 }
@@ -780,4 +772,4 @@ img {
   background-size: 24px 24px;
 }
 
-/*# sourceMappingURL=file:///d:/%D0%9A%D1%83%D1%80%D1%81%D0%B8%20%D0%94%D0%97%20GIThub/goit-markup-hw-07/css/profile.css.map *//*# sourceMappingURL=profile.css.map */
+/*# sourceMappingURL=file:///d:/%D0%9A%D1%83%D1%80%D1%81%D0%B8%20%D0%94%D0%97%20GIThub/goit-markup-hw-08/css/profile.css.map *//*# sourceMappingURL=profile.css.map */
