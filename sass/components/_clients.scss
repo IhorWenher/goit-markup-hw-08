@@ -1,8 +1,15 @@
-/*
 .clients {
   background-color: $primary-bg-color;
-  padding-top: 94px;
-  padding-bottom: 94px;
+
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .clients-container {
@@ -13,25 +20,60 @@
 
 .clients-title {
   @extend %title;
+  margin-bottom: 30px;
 }
 
 .clients-list {
   display: flex;
   justify-content: center;
-  margin: 0;
-  margin-top: 50px;
   padding: 0;
+
+  @media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.clients-list .item {
+  @media screen and (max-width: 479px) {
+    width: calc((100%-2 * 30px) / 2);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: $mobile) and (max-width: 767px) {
+    width: 210px;
+    margin: 15px;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    width: 226px;
+    margin: 15px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: calc((100%-4 * 30px) / 6);
+  }
+}
+
+.clients-list .item + .item {
+  @media screen and (min-width: $desktop) {
+    margin-left: 30px;
+  }
 }
 
 .clients-link {
+  height: 90px;
+
   display: flex;
   justify-content: center;
   align-items: center;
 
   @include transition(color);
-
-  width: 170px;
-  height: 90px;
 
   border: 1px solid $border-clients-color;
   border-radius: 4px;
@@ -79,12 +121,3 @@
   width: 88.48px;
   height: 45.44px;
 }
-
-.clients-list .item + .item {
-  margin-left: 30px;
-}
-
-.clients-list .item {
-  width: 170px;
-}
-*/

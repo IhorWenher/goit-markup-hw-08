@@ -1,6 +1,14 @@
 .features {
   background-color: $primary-bg-color;
-  padding-top: 94px;
+
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+  }
 }
 
 .features-container {
@@ -16,7 +24,7 @@
   margin: 0;
   padding: 0;
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
   }
@@ -51,6 +59,10 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: left;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .feature-description {
@@ -65,10 +77,25 @@
 }
 
 .features-list .item {
-  width: 370px;
-  margin-left: 30px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: $mobile) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: calc((100%-4 * 30px) / 4);
+    margin-left: 30px;
+  }
 }
 
 .features-list .item:first-child {
-  margin-left: 0;
+  @media screen and (min-width: $desktop) {
+    margin-left: 0;
+  }
 }

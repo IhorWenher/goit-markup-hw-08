@@ -1,8 +1,15 @@
-/*
 .page-team {
   background-color: $section-bg-color;
-  padding-top: 94px;
-  padding-bottom: 94px;
+
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team-container {
@@ -14,14 +21,23 @@
 }
 
 .emloyees-list {
-  display: flex;
   padding: 0;
-  margin: 0;
-  margin-top: 50px;
+  margin: -15px;
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    margin-top: 50px;
+  }
 }
 
 .emloyees-list .employee-item + .employee-item {
-  margin-left: 30px;
+  @media screen and (max-width: 767px) {
+    margin-top: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 30px;
+  }
 }
 
 .employee-item {
@@ -29,7 +45,26 @@
   background-color: $primary-bg-color;
   text-align: center;
 
-  padding-bottom: 30px;
+  @media screen and (max-width: 1199px) {
+    padding-bottom: 24px;
+  }
+
+  @media screen and (min-width: $mobile) and (max-width: 767px) {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 354px;
+    margin: 15px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 30px;
+  }
 
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -110,5 +145,3 @@
 .pin {
   @extend %pin;
 }
-
-*/

@@ -1,8 +1,11 @@
-/*
 .activitys {
-  background-color: $primary-bg-color;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  display: none;
+  @media screen and (min-width: $desktop) {
+    display: block;
+    background-color: $primary-bg-color;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .activitys-container {
@@ -54,4 +57,3 @@
   text-transform: uppercase;
   color: $primary-white-text-color;
 }
-*/

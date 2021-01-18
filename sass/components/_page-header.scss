@@ -1,38 +1,40 @@
 .page-header {
   background-color: $primary-bg-color;
-
-  @media screen and (min-width: $tablet) {
-    display: flex;
-  }
-}
-
-.container {
-  display: flex;
-  justify-content: space-between;
-  @extend %container;
-  background-color: $primary-bg-color;
-
-  @media screen and (max-width: 767px) {
-    position: relative;
-  }
-
   @media screen and (min-width: $tablet) {
     display: flex;
     align-items: center;
   }
 }
 
-.header-overlya {
-  display: none;
+.container {
+  display: flex;
+  align-items: center;
 
   @media screen and (max-width: 767px) {
-    position: absolute;
+    justify-content: space-between;
+  }
 
-    top: 60px;
-    left: 0;
-    width: 100%;
-    height: 453px;
-    background-color: $primary-bg-color;
+  @extend %container;
+  background-color: $primary-bg-color;
+
+  position: relative;
+}
+
+.header-overlya {
+  @media screen and (max-width: 767px) {
+    display: none;
+
+    &.is-open {
+      display: block;
+      position: absolute;
+
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: $primary-bg-color;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04),
+        0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+    }
   }
 
   @media screen and (min-width: $tablet) {
@@ -46,6 +48,13 @@
 }
 
 .site-nav {
+  padding: 0;
+  @media screen and (max-width: 767px) {
+    margin: 0;
+    margin-top: 65px;
+    text-align: center;
+  }
+
   @media screen and (min-width: $tablet) {
     display: flex;
     align-items: center;
@@ -55,13 +64,17 @@
 }
 
 .site-nav .item + .item {
+  @media screen and (max-width: 767px) {
+    margin-top: 40px;
+  }
+
   @media screen and (min-width: $tablet) {
     margin-left: 50px;
   }
 }
 
 .site-nav .list-item {
-  display: block;
+  display: inline-block;
   position: relative;
   text-align: center;
 
@@ -97,15 +110,18 @@
 
 .active::after {
   content: "";
-
-  position: absolute;
-  bottom: 0;
   display: block;
-  width: 100%;
   height: 4px;
 
   background-color: $accent-color;
   border-radius: 2px;
+
+  @media screen and (min-width: $tablet) {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+  }
 }
 
 .mobile-button {
@@ -122,6 +138,10 @@
 
 .mobile-button .icon-cross {
   display: none;
+}
+
+.mobile-button .menu-svg {
+  fill: $primary-title-color;
 }
 
 .mobile-button.is-open .icon-cross {
