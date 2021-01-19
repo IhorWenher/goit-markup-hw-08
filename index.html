@@ -383,52 +383,55 @@
         <!--Футер-->
         <footer class="page-footer">
             <div class="footer-container">
-                <div>
-                    <a href="index.html" class="footer-logo"><span class="logo-beginning">Web</span>Studio</a>
-                    <address class="contact">
-                        г. Киев, пр-т Леси Украинки, 26
-                        <ul class="contacts-list">
-                            <li class="item"><a href="mailto:info@devstudio" class="mail-phone">info@devstudio</a></li>
-                            <li class="item"><a href="tel:+380961111111" class="mail-phone">+38 096 111 11 11</a></li>
+                <div class="tablet-container">
+                    <div class="logo-container"> 
+                        <a href="index.html" class="footer-logo"><span class="logo-beginning">Web</span>Studio</a>
+                        <address class="contact">
+                            г. Киев, пр-т Леси Украинки, 26
+                            <ul class="contacts-list">
+                                <li class="item"><a href="mailto:info@devstudio" class="mail-phone">info@devstudio</a></li>
+                                <li class="item"><a href="tel:+380961111111" class="mail-phone">+38 096 111 11 11</a></li>
+                            </ul>
+                        </address>
+                    </div>
+                    <div class="link-container">
+                        <b class="invite">Присоединяйтесь</b>
+                        <ul class="border-links">
+                            <li class="link-item footer">
+                                <a href="#" class="social-link">
+                                    <svg class="pin">
+                                        <use href="./images/sprite.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="link-item footer">
+                                <a href="#" class="social-link">
+                                    <svg class="pin">
+                                        <use href="./images/sprite.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="link-item footer">
+                                <a href="#" class="social-link">
+                                    <svg class="pin">
+                                        <use href="./images/sprite.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="link-item footer">
+                                <a href="#" class="social-link">
+                                    <svg class="pin">
+                                        <use href="./images/sprite.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
                         </ul>
-                    </address>
+                    </div>
                 </div>
-                <div class="link-container">
-                    <b class="invite">Присоединяйтесь</b>
-                    <ul class="border-links">
-                        <li class="link-item footer">
-                            <a href="#" class="social-link">
-                                <svg class="pin">
-                                    <use href="./images/sprite.svg#icon-instagram"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="link-item footer">
-                            <a href="#" class="social-link">
-                                <svg class="pin">
-                                    <use href="./images/sprite.svg#icon-twitter"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="link-item footer">
-                            <a href="#" class="social-link">
-                                <svg class="pin">
-                                    <use href="./images/sprite.svg#icon-facebook"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="link-item footer">
-                            <a href="#" class="social-link">
-                                <svg class="pin">
-                                    <use href="./images/sprite.svg#icon-linkedin"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                
                 <div class="form-container">
                     <form action="#" method="POST" class="footer-form">
-                        <div>
+                        <div class="input-container">
                             <b class="subscribe-title">Подпишитесь на рассылку</b>
                             <input type="email" name="email" class="footer-input" placeholder="Е-mail">
                         </div>
@@ -448,7 +451,9 @@
                 </button>
 
                 <form action="#" method="POST" class="modal-form"> 
-                    <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
+                    <div class="b-class">
+                        <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
+                    </div>
 
                     <ul class="modal-list">
                         <li class="modal-item">
@@ -489,7 +494,7 @@
                     <label class="confirm-label">
                         <input class="confirm-input" type="checkbox" name="confirm">
                         <span class="check-area"></span>
-                        Соглашаюсь с рассылкой и принимаю 
+                        Соглашаюсь с рассылкой и <br class="br">принимаю 
                         <a class="contract-conditions" href="#"><span class="underline">Условия договора</span></a>
                     </label>
 
