@@ -47,7 +47,8 @@ body {
 Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
 */
 body {
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
 
 /*
@@ -92,7 +93,8 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo,
+    monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -176,9 +178,9 @@ select {
 Correct the inability to style clickable types in iOS and Safari.
 */
 button,
-[type=button],
-[type=reset],
-[type=submit] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
 }
 
@@ -231,7 +233,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
 1. Correct the odd appearance in Chrome and Safari.
 2. Correct the outline style in Safari.
 */
-[type=search] {
+[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -267,7 +269,9 @@ summary {
   display: list-item;
 }
 
-.footer-container, .portfolio-container, .container {
+.footer-container,
+.portfolio-container,
+.container {
   width: 100vw;
   padding-right: 15px;
   padding-left: 15px;
@@ -275,7 +279,9 @@ summary {
   margin-left: auto;
 }
 @media screen and (min-width: 1200px) {
-  .footer-container, .portfolio-container, .container {
+  .footer-container,
+  .portfolio-container,
+  .container {
     width: 1200px;
   }
 }
@@ -300,12 +306,14 @@ summary {
   fill: currentColor;
 }
 
-.phone-icon, .envelope-icon {
+.phone-icon,
+.envelope-icon {
   margin-right: 10px;
   fill: currentColor;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .phone-icon, .envelope-icon {
+  .phone-icon,
+  .envelope-icon {
     margin-right: 8px;
   }
 }
@@ -370,7 +378,8 @@ img {
     left: 0;
     width: 100%;
     background-color: #ffffff;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+      0px 1px 3px rgba(0, 0, 0, 0.16);
   }
 }
 @media screen and (min-width: 768px) {
@@ -571,7 +580,8 @@ img {
   letter-spacing: 0.02em;
   color: #757575;
 }
-.mail-phone.mail-phone:hover, .mail-phone.mail-phone:focus {
+.mail-phone.mail-phone:hover,
+.mail-phone.mail-phone:focus {
   color: #2196f3;
 }
 @media screen and (max-width: 767px) {
@@ -698,7 +708,7 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  .examples-list .item:nth-child(n+4) {
+  .examples-list .item:nth-child(n + 4) {
     margin-top: 15px;
   }
 
@@ -732,7 +742,8 @@ img {
   padding: 6px 22px;
   color: #ffffff;
   background-color: #2196f3;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
 
@@ -836,7 +847,8 @@ img {
 
 .project:focus,
 .project:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-title {
@@ -1135,4 +1147,4 @@ img {
   background-color: #2196f3;
   background-image: url(../images/icon-send.svg);
   background-size: 24px 24px;
-}/*# sourceMappingURL=profile.css.map */
+} /*# sourceMappingURL=profile.css.map */

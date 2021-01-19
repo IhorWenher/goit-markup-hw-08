@@ -56,9 +56,19 @@
   margin-left: 8px;
 }
 
+@media screen and (max-width: 391px) {
+  .examples-list .item:nth-child(n + 3) {
+    margin-top: 15px;
+  }
+
+  .examples-list .item:nth-child(3) {
+    margin-left: 0;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .examples-list .item:nth-child(n + 4) {
-    margin-top: 15px;
+    margin-top: 10px;
   }
 
   .examples-list .item:nth-child(4) {
@@ -114,10 +124,6 @@
 
 .project-item {
   display: block;
-
-  @media screen and (max-width: 479px) {
-    width: calc(100% - 30px);
-  }
 
   @media screen and (max-width: 767px) {
     width: 450px;
