@@ -267,7 +267,6 @@ summary {
   display: list-item;
 }
 
-/*$mobile: 480px;*/
 .footer-container, .clients-container, .team-container, .activitys-container, .features-container, .container {
   width: 100vw;
   padding-right: 15px;
@@ -382,6 +381,10 @@ img {
     display: flex;
     align-items: center;
   }
+}
+
+.border {
+  border: 1px solid #ececec;
 }
 
 .container {
@@ -1644,6 +1647,11 @@ img {
   display: block;
   width: 100%;
   height: 120px;
+  /*
+  @media screen and (max-width: $max-mobile) {
+    height: 70px;
+  }
+  */
   margin-top: 4px;
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -1652,11 +1660,6 @@ img {
   transition-property: outline;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-@media screen and (max-width: 480px) {
-  .textarea-field {
-    height: 70px;
-  }
 }
 .textarea-field:focus {
   outline: #2196f3;
@@ -1680,13 +1683,12 @@ img {
   font-weight: 400;
   letter-spacing: 0.03em;
   color: #757575;
-}
-@media screen and (max-width: 480px) {
-  .confirm-label {
+  /*
+  @media screen and (max-width: $max-mobile) {
     margin-bottom: 40px;
     align-items: flex-start;
     justify-content: center;
-  }
+  }*/
 }
 @media screen and (max-width: 768px) {
   .confirm-label {
@@ -1705,6 +1707,12 @@ img {
   width: 16px;
   height: 15px;
   margin-right: 8px;
+  /*
+  @media screen and (max-width: $max-mobile) {
+    position: absolute;
+    left: 0;
+  }
+  */
 }
 .check-area::before {
   content: "";
@@ -1713,12 +1721,6 @@ img {
   height: 15px;
   border: 2px solid #000000;
   border-radius: 2px;
-}
-@media screen and (max-width: 480px) {
-  .check-area {
-    position: absolute;
-    left: 0;
-  }
 }
 
 .br {
@@ -1746,13 +1748,13 @@ img {
   border-bottom: 0.8px solid currentColor;
   display: inline-block;
   line-height: 0.85;
-}
-@media screen and (max-width: 480px) {
-  .underline {
+  /*
+  @media screen and (max-width: $max-mobile) {
     position: absolute;
     left: 28%;
     top: 120%;
   }
+  */
 }
 
 .confirm-input {
@@ -1794,12 +1796,12 @@ img {
   border-color: transparent;
   border-radius: 4px;
   cursor: pointer;
-}
-@media screen and (max-width: 250px) {
-  .submit-button {
+  /*
+  @media screen and (max-width: 250px) {
     width: calc(100% - 30px);
     min-width: 100px;
     height: auto;
     padding: 0 0;
   }
+  */
 }/*# sourceMappingURL=main.css.map */
