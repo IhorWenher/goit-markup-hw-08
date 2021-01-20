@@ -22,11 +22,11 @@
 }
 
 .logo-container {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: $tablet) {
     text-align: center;
   }
 
-  @media screen and (min-width: $mobile) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
     text-align: center;
   }
 }
@@ -37,7 +37,7 @@
   font-weight: 700;
   letter-spacing: 0.03em;
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: $max-tablet) {
     font-size: 24px;
     line-height: 1.17;
   }
@@ -67,7 +67,7 @@
 }
 
 .contacts-list .item {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: $max-tablet) {
     margin-top: 8px;
   }
 
@@ -85,7 +85,7 @@
   line-height: 1.7;
   letter-spacing: 0.03em;
 
-  @media screen and (min-width: $mobile) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
     display: block;
   }
 }
@@ -93,18 +93,18 @@
 /* Соц сети*/
 
 .link-container {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $max-mobile) {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 60px;
   }
 
-  @media screen and (min-width: $mobile) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
     text-align: center;
   }
 
-  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
     margin-left: 165px;
   }
 
@@ -130,7 +130,7 @@
   margin-top: 20px;
   padding: 0;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $max-mobile) {
   }
 }
 
@@ -157,7 +157,7 @@
 /* Подписка */
 
 .form-container {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: $max-tablet) {
     margin-top: 60px;
   }
 
@@ -167,7 +167,7 @@
 }
 
 .footer-form {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: $max-tablet) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -195,15 +195,15 @@
 }
 
 .input-container {
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: $max-mobile) {
     width: 100%;
   }
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: $max-tablet) {
     text-align: center;
   }
 
-  @media screen and (min-width: $mobile) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
     width: 450px;
   }
 }
@@ -221,11 +221,11 @@
   filter: drop-shadow(0px 4px 4px $input-footer-filter-color);
   border-radius: 4px;
 
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: $max-mobile) {
     width: 100%;
   }
 
-  @media screen and (min-width: $mobile) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
     width: 450px;
   }
 
@@ -267,7 +267,7 @@
 
   color: $primary-white-text-color;
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: $max-tablet) {
     margin-top: 20px;
   }
 

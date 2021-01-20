@@ -1,7 +1,7 @@
 .features {
   background-color: $primary-bg-color;
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: $max-tablet) {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -24,7 +24,7 @@
   margin: 0;
   padding: 0;
 
-  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
@@ -61,7 +61,7 @@
   text-transform: uppercase;
   text-align: left;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $max-mobile) {
     text-align: center;
   }
 }
@@ -78,17 +78,17 @@
 }
 
 .features-list .item {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $max-mobile) {
     margin-bottom: 30px;
     margin-right: auto;
     margin-left: auto;
   }
 
-  @media screen and (min-width: $mobile) and (max-width: 767px) {
+  @media screen and (min-width: $tablet) and (max-width: $max-mobile) {
     width: 450px;
   }
 
-  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
     width: calc((100% - 60px) / 2);
     margin: 15px;
   }

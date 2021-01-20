@@ -3,7 +3,7 @@
 }
 
 .portfolio-section {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: $max-tablet) {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -19,11 +19,11 @@
 }
 
 .examples-container {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $max-mobile) {
     padding-bottom: 40px;
   }
 
-  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
     padding-bottom: 30px;
   }
 
@@ -43,41 +43,20 @@
   display: flex;
   justify-content: center;
   margin: 0;
+  margin-top: -15px;
   padding: 0;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $max-mobile) {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
+    margin-left: -8px;
   }
 }
 
 .examples-list .item {
   margin-left: 8px;
-}
-
-@media screen and (max-width: 391px) {
-  .examples-list .item:nth-child(n + 3) {
-    margin-top: 15px;
-  }
-
-  .examples-list .item:nth-child(3) {
-    margin-left: 0;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .examples-list .item:nth-child(n + 4) {
-    margin-top: 10px;
-  }
-
-  .examples-list .item:nth-child(4) {
-    margin-left: 0;
-  }
-}
-
-.examples-list .item:first-child {
-  margin: 0;
+  margin-top: 15px;
 }
 
 .examples-list .button {
@@ -125,7 +104,7 @@
 .project-item {
   display: block;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $max-mobile) {
     width: 450px;
     margin-bottom: 30px;
 
@@ -134,7 +113,7 @@
     }
   }
 
-  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
     width: calc((100% - 60px) / 2);
     margin: 15px;
   }

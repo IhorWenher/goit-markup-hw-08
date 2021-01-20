@@ -1,7 +1,7 @@
 .page-team {
   background-color: $section-bg-color;
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: $max-tablet) {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -24,7 +24,7 @@
   padding: 0;
   margin: 0;
 
-  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
@@ -36,7 +36,7 @@
 }
 
 .emloyees-list .employee-item + .employee-item {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $max-mobile) {
     margin-top: 30px;
   }
 
@@ -50,17 +50,17 @@
   background-color: $primary-bg-color;
   text-align: center;
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: $max-tablet) {
     padding-bottom: 24px;
   }
 
-  @media screen and (min-width: $mobile) and (max-width: 767px) {
+  @media screen and (min-width: $tablet) and (max-width: $max-mobile) {
     width: 450px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
     width: calc((100% - 60px) / 2);
     margin: 15px;
   }
