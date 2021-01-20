@@ -147,6 +147,10 @@
 
 .mobile-button .menu-svg {
   fill: $primary-title-color;
+  &:hover {
+    fill: $accent-color;
+    transform: all 200ms linear;
+  }
 }
 
 .mobile-button.is-open .icon-cross {

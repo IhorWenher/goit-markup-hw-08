@@ -124,6 +124,10 @@
   }
 }
 
+.projects-container img {
+  height: 294px;
+}
+
 .overlya-container {
   display: block;
 
@@ -144,6 +148,14 @@
   height: 100%;
   margin: 0;
   padding: 63px 24px;
+
+  @media screen and (max-width: $max-mobile) {
+    padding: 77px 24px;
+  }
+
+  @media screen and (max-width: 424px) {
+    padding: 50px 24px;
+  }
 
   background-color: $project-overlya-bg-color;
 }

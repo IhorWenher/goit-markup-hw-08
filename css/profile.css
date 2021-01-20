@@ -492,6 +492,10 @@ img {
 .mobile-button .menu-svg {
   fill: #212121;
 }
+.mobile-button .menu-svg:hover {
+  fill: #2196f3;
+  transform: all 200ms linear;
+}
 
 .mobile-button.is-open .icon-cross {
   display: block;
@@ -767,6 +771,10 @@ img {
   }
 }
 
+.projects-container img {
+  height: 294px;
+}
+
 .overlya-container {
   display: block;
   position: relative;
@@ -787,6 +795,16 @@ img {
   margin: 0;
   padding: 63px 24px;
   background-color: rgba(33, 150, 243, 0.9);
+}
+@media screen and (max-width: 480px) {
+  .project-overlya {
+    padding: 77px 24px;
+  }
+}
+@media screen and (max-width: 424px) {
+  .project-overlya {
+    padding: 50px 24px;
+  }
 }
 
 .base-overlya {
