@@ -1509,7 +1509,7 @@ img {
     padding: 10px 30px;
   }
 }
-@media screen and (min-width: 767px) and (max-width: 1199px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .modal {
     width: 450px;
     height: 609px;
@@ -1570,12 +1570,12 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .modal-title {
     line-height: 1.5;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .modal-title {
     line-height: 1.15;
     text-align: center;
@@ -1707,13 +1707,13 @@ img {
     justify-content: center;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .confirm-label {
     font-size: 12px;
     line-height: 1.17;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .confirm-label {
     font-size: 14px;
     line-height: 1.71;
@@ -1787,13 +1787,13 @@ img {
   letter-spacing: 0.03em;
   margin-left: 4.5px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .contract-conditions {
     font-size: 12px;
     line-height: 1.17;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .contract-conditions {
     font-size: 14px;
     line-height: 1.71;
