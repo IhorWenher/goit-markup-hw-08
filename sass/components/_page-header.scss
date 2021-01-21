@@ -1,6 +1,6 @@
 .page-header {
   background-color: $primary-bg-color;
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $start-mobile) {
     display: flex;
     align-items: center;
   }
@@ -121,7 +121,7 @@
   background-color: $accent-color;
   border-radius: 2px;
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $start-mobile) {
     position: absolute;
     bottom: 0;
     display: block;

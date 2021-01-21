@@ -50,13 +50,13 @@
   background-color: $primary-bg-color;
   text-align: center;
 
-  @media screen and (max-width: $max-tablet) {
-    padding-bottom: 24px;
-  }
-
   @media screen and (min-width: $tablet) and (max-width: $max-tablet) {
     width: calc((100% - 60px) / 2);
     margin: 15px;
+  }
+
+  @media screen and (max-width: $max-tablet) {
+    padding-bottom: 24px;
   }
 
   @media screen and (min-width: $desktop) {
