@@ -660,13 +660,13 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .portfolio-section {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .portfolio-section {
     padding-top: 94px;
     padding-bottom: 109px;
@@ -678,7 +678,7 @@ img {
     padding-bottom: 40px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .examples-container {
     padding-bottom: 30px;
   }
@@ -767,13 +767,19 @@ img {
     margin: 0;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 480px) {
+  .project-item {
+    width: 450px;
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
   .project-item {
     width: calc((100% - 60px) / 2);
     margin: 15px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .project-item {
     width: calc((100% - 90px) / 3);
     margin: 15px;
